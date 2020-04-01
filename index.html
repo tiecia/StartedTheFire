@@ -21,10 +21,11 @@
     </div>
     
     <div class="parallax" id="homeImg" style="background-image: url(images/fire.jpg)">
-        <div class="nameDiv">
-        <h1>We Didn't Start the Fire by Billy Joel</h1>
-        <h3>"Foreign debts, homeless vets, AIDS, crack, Bernie Goetz"</h3>
-    </div></div>
+        <div id="title" class="nameDiv">
+            <h1>We Didn't Start the Fire by Billy Joel</h1>
+            <h3>"Foreign debts, homeless vets, AIDS, crack, Bernie Goetz"</h3>
+        </div>
+    </div>
 
     
     <div class=parallax id="videoImg" style="background-image: url(images/joel.webp)"> 
@@ -135,17 +136,11 @@
             } else if(navigator.userAgent.indexOf("Edge") > -1 || navigator.userAgent.indexOf("Edg") > -1) {
                 alert("Please use Google Chrome for the best experience");
             }
+            for (opacity = 0; opacity < 1.1; opacity = opacity + 0.1) {           
+                setTimeout(function(){document.getElementById('title').style.opacity = opacity;},100)                       
+            } 
         }
         
-        // Get the modal
-        var modal = document.getElementById('id01');
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
-          }
-        }
         function menubarscroll(){
             if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
                 //while scrolled the bar is in this position

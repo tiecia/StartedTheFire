@@ -283,7 +283,8 @@ body{
     text-align: center;
     margin: auto;
     display: inline-block;
-    
+    opacity: 0%;
+    transition: opacity 1s;
 }
 
 .nameDiv h1{
