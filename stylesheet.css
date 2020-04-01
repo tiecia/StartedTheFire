@@ -1,0 +1,303 @@
+@font-face{
+    font-family: NovaLight;
+    src: url(fonts/ArialNovaCond-Light.ttf);
+}
+@font-face{
+    font-family: NovaLightBold;
+    src: url(fonts/ArialNovaCond-Bold.ttf);
+}
+@font-face{
+    font-family: GravityLight;
+    src: url(fonts/gravity/Gravity-Light.otf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+    
+body{
+    background-color: black;
+    background-position:top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    top: -2000;
+    font-family: Segoe UI Light;
+    min-width: 500px;
+    overflow-x: hidden;
+}
+    /*Top Menu Bar CSS*/
+    
+    
+    /*div that contains the list*/
+.menublock{
+    background-color:transparent;
+    position: fixed;
+    width: 100%;    
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+    transition: top 0.5s;
+    padding: 0px;
+    transition: padding 0.5s;
+        
+}
+    
+    /*list settings*/
+.menu {
+    list-style: none;
+    overflow: hidden;
+    float: none;
+    text-align: center;
+    color: white;
+    display: block;
+    font-family: NovaLightBold;
+    font-weight: bold;
+}
+    
+    /*makes the list horizontal and not vertical*/
+.menu li{
+    display: inline;
+    padding: 10px;
+}
+    
+.menu a{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: dimgrey;
+}
+    
+    /*when the mouse hovers over the text*/
+.menu a:hover{
+    background-color: #1a1a1a;
+    transition: background-color 0.7s;
+}
+    
+.menuspace{
+    background-color: aqua;
+    top: 4000px;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: lightblue;
+  width: 0%;
+}
+ 
+    /*Parallaxed Image Formatting*/
+    /*Home Image Div*/
+#homeImg{
+    min-height: 1000px;
+    background-size: cover;
+}
+#videoDiv{
+    background-color: black;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+}
+#videoTitleText{
+    color: white;
+    font-size: 50px;
+    font-family: NovaLightBold;
+}
+#videoBody{
+    width: 100%;
+    height: 300px;
+    align-self: center;
+    background-color: white;
+    text-align: center;
+}
+#videoImg{
+    min-height: 1700px;
+    background-size: contain;
+    background-position: center;
+    background-color: gray
+    z-index: -1;
+}
+#video{
+    display: block;
+    margin: auto;
+    transform: translateY(40%);
+}
+
+#subTitleDiv{
+    background-color: white;
+    padding: 30px
+}
+#subTitleText{
+    color: black;
+    text-align: center;
+    font-size: 70px;
+    font-family: NovaLightBold;
+    letter-spacing: 40px;
+    padding-left: 2%;
+}
+
+#subBodyText{
+    background-color: white;
+    height: auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 70px;
+}
+
+#singleImage{
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    padding-top: 50px;
+}
+
+#debtsImg{
+    min-height:1800px;
+    background-size: cover;
+    z-index: 10;
+}
+
+#debtsBodyText{
+    background-color: white;
+    height: auto;
+    text-align: center;
+    padding: 30px;
+    padding-left: 23%;
+    padding-right: 23%;
+    padding-bottom: 70px;
+}
+#debtsGraphRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    padding-bottom: 60px;
+    width: auto;
+    height: auto;
+}
+
+#debtsGraphCol {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    max-height: 310px;
+    width: auto;
+    padding-top: 10px;
+}
+
+#debtsImage{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+#homelessImg{
+    min-height:2000px;;
+    background-size: cover;
+    z-index: 200;
+}
+
+#aidsImg{
+    min-height:1500px;
+    background-size: cover;
+    z-index: 100;
+}
+
+#crackImg{
+    min-height:2000px;
+    background-size: cover;
+    z-index: 100;
+}
+
+#bernImg{
+    min-height:2500px;
+    background-size: cover;
+    z-index: 100;
+    background-position: top;
+}
+
+#bernSubBodyText{
+    background-color: white;
+    height: auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-bottom: 70px;
+}
+
+
+#bernSubImage{
+    padding-top: 50px;
+    height: auto;
+    width: auto;
+    max-width: 40%;
+}
+
+#bernGraphRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    padding-bottom: 60px;
+    width: auto;
+    height: auto;
+    padding-top: 50px;
+    max-width: 100%;
+}
+
+#bernGraphCol {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    padding-top: 10px;
+}
+
+#bernLeftImg{
+    width: auto;
+    height: auto;
+    max-width: 68%;
+    margin-right: 30px;
+    
+}
+
+#bernRightImg{
+    width: auto;
+    height: auto;
+    max-width: 70%; 
+    margin-left: 30px;
+}
+
+    /*Title/Name Div*/
+.nameDiv{
+    background-color: transparent;
+    font-family: GravityLight;
+    font-size: 30px;
+    position: absolute;
+    top: 40%;
+    transform: translateX(50%);
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    
+}
+
+.nameDiv h1{
+    color: white;
+}
+
+.nameDiv h3{
+    color: white;
+}
+
+
+    /*Universal Parallax Format*/
+.parallax{ 
+    background-color: white;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
